@@ -1,3 +1,4 @@
+//R__LOAD_LIBRARY($SBSOFFLINE/lib64/libsbs.so);
 #include <iostream>
 #include "TSystem.h"
 #include "TString.h"
@@ -18,7 +19,7 @@
 void replay_BBCal(int run_number = 124, uint nev = -1, TString start_name = "e1209019", uint nseg = 0)
 {
   //load SBS-offline
-  // gSystem->Load("libsbs.so");
+  //gSystem->Load("libsbs.so");
   //--- Define the experimental configuration, i.e. spectrometers, detectors ---
 
   //THaHRS* bb = new THaHRS("R", "Right HRS" );
@@ -38,7 +39,7 @@ void replay_BBCal(int run_number = 124, uint nev = -1, TString start_name = "e12
   bbtrig->SetModeADC(SBSModeADC::kADC);
   bbtrig->SetModeTDC(SBSModeTDC::kTDC);
   bbtrig->SetStoreEmptyElements(kFALSE);
-  bigbite->AddDetector( bbtrig );
+  //bigbite->AddDetector( bbtrig );
   gHaApps->Add(bigbite);
 
   // SBSGenericDetector* trig= new SBSGenericDetector("trig","BigBite shower trig");
