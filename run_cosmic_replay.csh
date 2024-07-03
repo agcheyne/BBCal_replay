@@ -2,6 +2,9 @@
 
 ## Edits
 # P. Datta <pdbforce@jlab.org> Created 11-14-2021
+# A. Cheyne <a.cheyne.1@research.gla.ac.yk> Updated 07-03-2024
+    # Added GEn-RP experiment
+
 
 ## Usage
 # This macro replays the cosmic run for 
@@ -20,4 +23,3 @@ module list
 
 cd replay
 analyzer -b -q 'replay_BBCal.C+('$1','$2',"'$GEnRP'")'
-
